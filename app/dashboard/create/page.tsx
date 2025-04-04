@@ -2,7 +2,7 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import {Textarea} from "@/components/ui/textarea";
-import {handleSubmit} from "@/app/actions";
+import { handleSubmission } from "@/app/actions";
 import {SubmitButton} from "@/app/components/general/SubmitButton";
 
 
@@ -18,7 +18,7 @@ export default function Create() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form className="flex flex-col gap-4" action={handleSubmit}>
+            <form className="flex flex-col gap-4" action={handleSubmission}>
               <div className="flex flex-col gap-2">
                 <Label>Title</Label>
                 <Input name="title" required type="text" placeholder="Title"/>
