@@ -36,4 +36,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 DB Prisma
+npx prisma studio
+npx prisma db push
+https://console.neon.tech/app/projects/mute-smoke-28389521/branches/br-divine-forest-a8q4hb7e/tables?database=neondb
+
+
 Auth Kinde
