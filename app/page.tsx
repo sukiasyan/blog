@@ -6,7 +6,6 @@ import {BlogPostCard} from "@/app/components/general/BlogPostCard";
 export const revalidate = 60;
 
 async function getData() {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
   const data = await prisma.blogPost.findMany({
     select: {
       title: true,
@@ -19,6 +18,9 @@ async function getData() {
       authorId: true,
       updatedAt: true,
     },
+    orderBy: {
+      createdAt: 'desc'
+    }
   });
 
   return data;
